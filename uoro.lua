@@ -215,7 +215,7 @@ function UORO:forward(x, o_hat)
         ntranssbar = math.sqrt(ntranssbar)
         -- --
 
-        local epsilon = 1e-7
+        local epsilon = 1e-5
         local rho0 = math.sqrt((self.thetabar:norm() + epsilon)/(ntranssbar + epsilon))
         local rho1 = math.sqrt((self.g:norm() + epsilon)/(nnu + epsilon))
         for i=1, #self.s do
