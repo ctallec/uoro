@@ -1,9 +1,9 @@
-# uoro
+# UORO
 
 This repository provides a torch implementation of the UORO algorithm
 described in https://arxiv.org/abs/1702.05043.
 
-## Using uoro implementation
+## Using UORO implementation
 
 ### Prerequisites
 
