@@ -18,7 +18,7 @@ local opt = lapp[[
 -b, --batch    (default 1)                                       specify batch size
 -T, --truncate (default 1)                                       specify truncation parameter
 -o, --off                                                        if specified then just BPTT
--w, --width    (default 'big')                                   specify network width
+-w, --width    (default 'small')                                 specify network width
 -a, --alpha    (default 3e-2)                                    specify learning time lag
 ]]
 
