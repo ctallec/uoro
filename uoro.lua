@@ -145,7 +145,7 @@ function UORO:forward(x, o_hat)
             self.dldo[t] = self.clones.criterion[t]:backward(self.o[t][1], self.o_hat[t][1])
             self.toBackwards[t][1] = self.dldo[t]
         else
-            self.dldo = self.clones.criterion[t]:backward(self.o[t], self.o_hat[t])
+            self.dldo[t] = self.clones.criterion[t]:backward(self.o[t], self.o_hat[t])
             for i=1, #self.o[t] do
                 self.toBackwards[t][i] = self.dldo[t][i]
             end
